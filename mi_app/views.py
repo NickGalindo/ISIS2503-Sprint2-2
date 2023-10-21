@@ -29,7 +29,7 @@ def procesar_imagen(imagen_path, capacidad):
 
             # Guardar la imagen procesada en GCS
             bucket = storage_client.get_bucket(bucket_name)
-            nombre_archivo_procesado = 'imagen_procesada.jpg'
+            nombre_archivo_procesado = 'medicamentos-genericos-1.jpg'
             blob = bucket.blob(nombre_archivo_procesado)
             buffer = BytesIO()
             imagen.save(buffer, format='JPEG')
